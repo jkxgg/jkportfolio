@@ -1136,14 +1136,14 @@ section,
 /*--------------------------------------------------------------
 # Service Details Section
 --------------------------------------------------------------*/
-.service-details .services-list {
+.service-details .content-list {
   background-color: var(--surface-color);
   padding: 10px 30px;
   border: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
   margin-bottom: 20px;
 }
 
-.service-details .services-list a {
+.service-details .content-list a {
   display: block;
   line-height: 1;
   padding: 8px 0 8px 15px;
@@ -1153,13 +1153,13 @@ section,
   transition: 0.3s;
 }
 
-.service-details .services-list a.active {
+.service-details .content-list a.active {
   color: var(--heading-color);
   font-weight: 700;
   border-color: var(--accent-color);
 }
 
-.service-details .services-list a:hover {
+.service-details .content-list a:hover {
   border-color: var(--accent-color);
 }
 
