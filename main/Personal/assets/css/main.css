@@ -774,6 +774,7 @@ section,
   margin-bottom: 20px;
   display: flex;
   align-items: center;
+  white-space: nowrap;
 }
 
 .about .content ul strong {
