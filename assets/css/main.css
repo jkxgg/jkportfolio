@@ -1258,15 +1258,15 @@ section,
   background-color: var(--accent-color);
 }
 
-skills .skill-group {
+.skill-group {
   margin-bottom: 28px;
 }
 
-.skills .skill-group:last-child {
+.skill-group:last-child {
   margin-bottom: 0;
 }
 
-.skills .skill-group h4 {
+.skill-group h4 {
   font-size: 16px;
   font-weight: 600;
   margin-bottom: 12px;
@@ -1275,36 +1275,39 @@ skills .skill-group {
 
 /* Skill Pills */
 
-.skills .skill-pills {
+.skill-pills {
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
 }
 
-.skills .skill-pill {
+.skill-pill {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-
   padding: 8px 16px;
-
   border-radius: 999px;
-
   background: color-mix(in srgb, var(--accent-color), transparent 92%);
   color: var(--accent-color);
-
   border: 1px solid color-mix(in srgb, var(--accent-color), transparent 75%);
-
   font-size: 14px;
   font-weight: 500;
-
   transition: all .25s ease;
 }
 
-.skills .skill-pill:hover {
+.skill-pill:hover {
   background: var(--accent-color);
   color: var(--contrast-color);
   transform: translateY(-2px);
+}
+
+.resume .skill-pill {
+    padding: 5px 10px;
+    font-size: 12px;
+}
+
+.resume .skill-pills {
+    gap: 6px;
 }
 
 /*.skills .skill-item {
