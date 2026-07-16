@@ -489,6 +489,39 @@ h6 {
   color: color-mix(in srgb, var(--default-color), transparent 70%);
 }
 
+/* Keep the Responsibilities title above, but within, the page flow. */
+.service-details-page .page-title {
+  background-color: #111111;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 998;
+}
+
+.service-details-page .page-title .container {
+  width: 100%;
+  max-width: none;
+}
+
+.service-details-page .responsibility-icon {
+  color: var(--accent-color);
+  font-size: 0.9em;
+  margin-right: 10px;
+  vertical-align: 0.05em;
+}
+
+@media (min-width: 1200px) {
+  .service-details-page .page-title {
+    width: calc(100% + 330px);
+    margin-left: -330px;
+  }
+
+  .service-details-page .page-title .container {
+    padding-left: 355px;
+    padding-right: 25px;
+  }
+}
+
 /*--------------------------------------------------------------
 # Global Sections
 --------------------------------------------------------------*/
@@ -2446,7 +2479,6 @@ section,
 .service-details .service-details-slider .swiper-pagination .swiper-pagination-bullet {
   width: 10px;
   height: 10px;
-  background-color: var(--contrast-color);
   opacity: 0.5;
   transition: 0.3s;
 }
@@ -2587,6 +2619,124 @@ section,
   font-size: 14px;
 }
 
+.service-eyebrow {
+  display: inline-block;
+  margin-bottom: 1rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #b7b7b7;
+}
+
+.service-heading {
+  margin-bottom: 1.25rem;
+}
+
+.practicum-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem 1.5rem;
+  margin-bottom: 1.75rem;
+  color: #bcbcbc;
+  font-size: 0.9rem;
+}
+
+.practicum-meta span {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+}
+
+.practicum-stats {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.practicum-stat {
+  min-width: 135px;
+  padding: 0.9rem 1rem;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  background: rgba(255, 255, 255, 0.025);
+}
+
+.practicum-stat strong {
+  display: block;
+  margin-bottom: 0.15rem;
+  font-size: 1.35rem;
+  line-height: 1;
+  color: #ffffff;
+}
+
+.practicum-stat span {
+  font-size: 0.78rem;
+  color: #a9a9a9;
+}
+
+.service-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 1.4rem;
+}
+
+.service-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6rem;
+  padding: 0.8rem 1.1rem;
+  text-decoration: none;
+  transition: 0.25s ease;
+}
+
+.service-btn-primary {
+  background: #ffffff;
+  color: #181818;
+}
+
+.service-btn-primary:hover {
+  background: #dddddd;
+  color: #181818;
+}
+
+.service-btn-secondary {
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: #ffffff;
+  background: transparent;
+}
+
+.service-btn-secondary:hover {
+  border-color: #ffffff;
+  color: #ffffff;
+}
+
+@media (max-width: 991px) {
+  .service-summary {
+    margin-top: 1rem;
+  }
+}
+
+@media (max-width: 575px) {
+  .practicum-stats {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .practicum-stat {
+    min-width: 0;
+  }
+
+  .service-actions {
+    flex-direction: column;
+  }
+
+  .service-btn {
+    width: 100%;
+  }
+}
+
 @media (max-width: 991px) {
 
   .service-details .service-info,
@@ -2600,4 +2750,464 @@ section,
 --------------------------------------------------------------*/
 .starter-section {
   /* Add your styles here */
+}
+
+.practicum-gallery {
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+  background: #242424;
+}
+
+/* Individual slide */
+.practicum-slide {
+  position: relative;
+  height: 500px;
+  margin: 0;
+  overflow: hidden;
+}
+
+.practicum-slide img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+/* Dark overlay for caption readability */
+.practicum-slide::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.72) 0%,
+    rgba(0, 0, 0, 0.2) 38%,
+    transparent 68%
+  );
+  pointer-events: none;
+}
+
+/* Image caption */
+.slide-caption {
+  position: absolute;
+  left: 1.5rem;
+  right: 1.5rem;
+  bottom: 1.5rem;
+  z-index: 2;
+}
+
+.slide-caption span {
+  display: block;
+  margin-bottom: 0.3rem;
+  color: rgba(255, 255, 255, 0.72);
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.slide-caption strong {
+  display: block;
+  max-width: 580px;
+  color: #ffffff;
+  font-size: 1.1rem;
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+/* Navigation arrows */
+.practicum-gallery .swiper-button-prev,
+.practicum-gallery .swiper-button-next {
+  width: 42px;
+  height: 42px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 50%;
+  background: rgba(20, 20, 20, 0.72);
+  color: #ffffff;
+  backdrop-filter: blur(8px);
+  transition:
+    background 0.25s ease,
+    border-color 0.25s ease;
+}
+
+.practicum-gallery .swiper-button-prev:hover,
+.practicum-gallery .swiper-button-next:hover {
+  background: rgba(35, 35, 35, 0.94);
+  border-color: rgba(255, 255, 255, 0.5);
+}
+
+.practicum-gallery .swiper-button-prev::after,
+.practicum-gallery .swiper-button-next::after {
+  font-size: 0.85rem;
+  font-weight: 700;
+}
+
+/* Pagination */
+.practicum-gallery .swiper-pagination {
+  bottom: 0.85rem;
+}
+
+.practicum-gallery .swiper-pagination-bullet {
+  width: 7px;
+  height: 7px;
+  margin: 0 4px;
+  background: rgba(255, 255, 255, 0.62);
+  opacity: 1;
+  transition: width 0.25s ease;
+}
+
+.practicum-gallery .swiper-pagination-bullet-active {
+  width: 22px;
+  border-radius: 999px;
+  background: #ffffff;
+}
+
+/* Responsive */
+@media (max-width: 1199px) {
+  .practicum-slide {
+    height: 430px;
+  }
+}
+
+@media (max-width: 991px) {
+  .practicum-slide {
+    height: 460px;
+  }
+}
+
+@media (max-width: 575px) {
+  .practicum-slide {
+    height: 320px;
+  }
+
+  .slide-caption {
+    left: 1rem;
+    right: 1rem;
+    bottom: 1.15rem;
+  }
+
+  .slide-caption strong {
+    font-size: 0.95rem;
+  }
+
+  .practicum-gallery .swiper-button-prev,
+  .practicum-gallery .swiper-button-next {
+    display: none;
+  }
+}
+/* Main overview content */
+
+.content {
+  max-width: 920px;
+}
+
+.content h3 {
+  margin: 2.25rem 0 0.7rem;
+  color: #ffffff;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.content h3:first-child {
+  margin-top: 0;
+}
+
+.content p {
+  margin: 0;
+  color: #b9b9b9;
+  font-size: 0.95rem;
+  line-height: 1.8;
+}
+
+
+/* Next-page navigation */
+
+.practicum-next {
+  margin-top: 4rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.practicum-next-link {
+  position: relative;
+  display: block;
+  padding: 1.5rem 1.6rem;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.025);
+  color: inherit;
+  text-decoration: none;
+  transition:
+    transform 0.25s ease,
+    border-color 0.25s ease,
+    background 0.25s ease;
+}
+
+.practicum-next-link::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 3px;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.7);
+  transform: scaleY(0);
+  transform-origin: bottom;
+  transition: transform 0.25s ease;
+}
+
+.practicum-next-link:hover {
+  transform: translateY(-3px);
+  border-color: rgba(255, 255, 255, 0.18);
+  background: rgba(255, 255, 255, 0.045);
+}
+
+.practicum-next-link:hover::before {
+  transform: scaleY(1);
+}
+
+.practicum-next-content {
+  max-width: 760px;
+}
+
+.practicum-next-label {
+  display: inline-block;
+  margin-bottom: 0.55rem;
+  color: #8f8f8f;
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+}
+
+.practicum-next-title-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.practicum-next-title-row h4 {
+  margin: 0;
+  color: #ffffff;
+  font-size: 1.35rem;
+  font-weight: 600;
+}
+
+.practicum-next-icon {
+  display: inline-flex;
+  flex: 0 0 auto;
+  align-items: center;
+  justify-content: center;
+  width: 42px;
+  height: 42px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 50%;
+  color: #ffffff;
+  transition:
+    transform 0.25s ease,
+    background 0.25s ease,
+    border-color 0.25s ease;
+}
+
+.practicum-next-link:hover .practicum-next-icon {
+  transform: translateX(4px);
+  border-color: rgba(255, 255, 255, 0.32);
+  background: rgba(255, 255, 255, 0.06);
+}
+
+.practicum-next-icon i {
+  font-size: 1rem;
+}
+
+.practicum-next p {
+  max-width: 680px;
+  margin: 0.7rem 0 0;
+  color: #aaa;
+  font-size: 0.9rem;
+  line-height: 1.65;
+}
+
+
+/* Keyboard accessibility */
+
+.practicum-next-link:focus-visible {
+  outline: 2px solid #ffffff;
+  outline-offset: 4px;
+}
+
+
+/* Responsive */
+
+@media (max-width: 575px) {
+  .practicum-next {
+    margin-top: 3rem;
+  }
+
+  .practicum-next-link {
+    padding: 1.25rem;
+  }
+
+  .practicum-next-title-row {
+    align-items: flex-start;
+  }
+
+  .practicum-next-title-row h4 {
+    font-size: 1.15rem;
+  }
+
+  .practicum-next-icon {
+    width: 38px;
+    height: 38px;
+  }
+
+  .practicum-next p {
+    font-size: 0.85rem;
+  }
+}
+
+.role-gallery {
+  position: relative;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 12px;
+  background: #181818;
+}
+
+.role-slide {
+  position: relative;
+  height: 520px;
+  margin: 0;
+  overflow: hidden;
+  background: #151515;
+}
+
+.role-slide img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: contain;
+  object-position: center;
+  padding: 1rem 1rem 8.5rem;
+}
+
+.role-slide::after {
+  content: "";
+  position: absolute;
+  inset: auto 0 0;
+  height: 45%;
+  background: linear-gradient(
+    to top,
+    rgba(12, 12, 12, 0.98) 0%,
+    rgba(12, 12, 12, 0.9) 55%,
+    transparent 100%
+  );
+  pointer-events: none;
+}
+
+.role-slide figcaption {
+  position: absolute;
+  left: 1.5rem;
+  right: 1.5rem;
+  bottom: 1.7rem;
+  z-index: 2;
+  max-width: 720px;
+}
+
+.role-slide figcaption span {
+  display: block;
+  margin-bottom: 0.3rem;
+  color: #9d9d9d;
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+}
+
+.role-slide figcaption strong {
+  display: block;
+  color: #ffffff;
+  font-size: 1.15rem;
+  font-weight: 600;
+  line-height: 1.35;
+}
+
+.role-slide figcaption p {
+  margin: 0.45rem 0 0;
+  color: #bcbcbc;
+  font-size: 0.85rem;
+  line-height: 1.55;
+}
+
+.role-gallery .swiper-button-prev,
+.role-gallery .swiper-button-next {
+  width: 40px;
+  height: 40px;
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  border-radius: 50%;
+  background: rgba(20, 20, 20, 0.82);
+  color: #ffffff;
+  backdrop-filter: blur(8px);
+}
+
+.role-gallery .swiper-button-prev::after,
+.role-gallery .swiper-button-next::after {
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+
+.role-gallery .swiper-pagination {
+  bottom: 0.8rem;
+  text-align: right;
+  padding-right: 1.25rem;
+}
+
+.role-gallery .swiper-pagination-bullet {
+  width: 7px;
+  height: 7px;
+  background: rgba(255, 255, 255, 0.55);
+  opacity: 1;
+}
+
+.role-gallery .swiper-pagination-bullet-active {
+  width: 22px;
+  border-radius: 999px;
+  background: #ffffff;
+}
+
+@media (max-width: 991px) {
+  .role-slide {
+    height: 470px;
+  }
+}
+
+@media (max-width: 575px) {
+  .role-slide {
+    height: 390px;
+  }
+
+  .role-slide img {
+    padding: 0.75rem 0.75rem 10rem;
+  }
+
+  .role-slide figcaption {
+    left: 1rem;
+    right: 1rem;
+    bottom: 1.4rem;
+  }
+
+  .role-slide figcaption strong {
+    font-size: 1rem;
+  }
+
+  .role-slide figcaption p {
+    font-size: 0.8rem;
+  }
+
+  .role-gallery .swiper-button-prev,
+  .role-gallery .swiper-button-next {
+    display: none;
+  }
 }
