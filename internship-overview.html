@@ -15,7 +15,7 @@
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com" rel="preconnect">
   <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700;800&family=Poppins:wght@700&family=Roboto:wght@300;400;500;700&family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
 
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -26,6 +26,7 @@
 
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
+  <link href="assets/css/internship-overview.css" rel="stylesheet">
 </head>
 
 <body class="service-details-page">
@@ -62,11 +63,11 @@
     <!-- Page Title -->
     <div class="page-title dark-background">
       <div class="container d-lg-flex justify-content-between align-items-center">
-        <h1 class="mb-2 mb-lg-0">Internship Overview</h1>
+        <h1 class="mb-2 mb-lg-0"><a href="index.html#index">jkxgg.</a></h1>
         <nav class="breadcrumbs">
           <ol>
             <li><a href="index.html#practicum">Practicum</a></li>
-            <li class="current">Internship Overview</li>
+            <li class="current">Overview</li>
           </ol>
         </nav>
       </div>
@@ -76,6 +77,12 @@
     <section id="service-details" class="service-details section">
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <header class="overview-intro">
+          <span class="overview-kicker"><i class="bi bi-info-circle" aria-hidden="true"></i> Practicum Overview</span>
+          <h2>Internship Overview</h2>
+          <p>Learn about my host organization, internship role, work arrangement, and practicum objectives.</p>
+        </header>
 
         <div class="row gy-4">
 
@@ -148,50 +155,54 @@
               <div class="swiper-pagination"></div>
             </div> <!-- End Slider Section -->
 
-            <div class="content mt-5">
-              <h3>City Government of Biñan</h3>
-              <p>
-                The City Government of Biñan is the local governing body responsible for
-                delivering efficient, transparent, and citizen-centered public services.
-                Through the adoption of modern technologies and digital solutions, the City
-                continues to improve government operations, streamline service delivery,
-                and strengthen engagement with the community.
-              </p>
+            <div class="overview-content">
+              <section class="overview-section overview-summary" aria-labelledby="overview-summary-title">
+                <span class="section-eyebrow">Internship Context</span>
+                <h3 id="overview-summary-title">Internship Overview</h3>
+                <p>My practicum at the City Government of Biñan’s Information and Communications Technology Office provided hands-on experience in software development, UI/UX design, multimedia production, system testing, technical documentation, and collaborative project work. As part of the Application Development &amp; Creative Support Team, I contributed to government information systems, educational technology projects, and public information initiatives.</p>
+              </section>
 
-              <h3>Information and Communications Technology Office (ICTO)</h3>
-              <p>
-                The Information and Communications Technology Office serves as the City
-                Government of Biñan’s primary department for digital transformation and
-                technology-driven initiatives. It supports local government offices through
-                systems development, technical assistance, infrastructure management,
-                software maintenance, cybersecurity support, and other ICT services that
-                improve public service delivery.
-              </p>
+              <div class="organization-grid">
+                <article class="overview-text-card">
+                  <span class="card-icon"><i class="bi bi-buildings" aria-hidden="true"></i></span>
+                  <div><span class="section-eyebrow">Host Organization</span><h3>City Government of Biñan</h3><p>The City Government of Biñan is the local governing body responsible for delivering efficient, transparent, and citizen-centered public services. Through the adoption of modern technologies and digital solutions, the City continues to improve government operations, streamline service delivery, and strengthen engagement with the community.</p></div>
+                </article>
+                <article class="overview-text-card">
+                  <span class="card-icon"><i class="bi bi-cpu" aria-hidden="true"></i></span>
+                  <div><span class="section-eyebrow">Assigned Department</span><h3>Information and Communications Technology Office</h3><p>The Information and Communications Technology Office leads the City Government of Biñan’s digital transformation and technology-driven initiatives. It supports local government departments through information systems development, technical assistance, infrastructure management, software maintenance, cybersecurity support, and other ICT services that improve public service delivery.</p></div>
+                </article>
+              </div>
 
-              <h3>Internship Placement</h3>
-              <p>
-                During my practicum, I was assigned to the Application Development and
-                Creative Support Team. My placement involved software development, UI/UX
-                design, multimedia production, software testing, technical documentation,
-                and collaboration on government and educational technology projects.
-              </p>
+              <section class="overview-section team-panel" aria-labelledby="team-title">
+                <div class="team-heading"><span class="card-icon"><i class="bi bi-people" aria-hidden="true"></i></span><div><span class="section-eyebrow">Team Placement</span><h3 id="team-title">Application Development &amp; Creative Support Team</h3></div></div>
+                <p>I was assigned to a multidisciplinary team responsible for developing software solutions and producing creative digital materials for government and educational projects. My placement involved coding, interface design, multimedia asset creation, system testing, documentation, and collaborative project work.</p>
+                <div class="overview-chips" aria-label="Team focus areas"><span>Software Development</span><span>Creative Support</span><span>Collaborative Workflow</span></div>
+              </section>
 
-              <h3>Practicum Objectives</h3>
-              <p>
-                The internship provided an opportunity to apply academic knowledge in a
-                professional environment, gain experience with real-world development
-                workflows, and strengthen the technical and interpersonal skills expected
-                of an Information Technology practitioner.
-              </p>
+              <section class="overview-section" aria-labelledby="objectives-title">
+                <div class="overview-heading"><span class="section-eyebrow">Purpose</span><h3 id="objectives-title">Practicum Objectives</h3></div>
+                <div id="objectives-grid" class="overview-card-grid objectives-grid"></div>
+              </section>
+
+              <section class="overview-section work-panel" aria-labelledby="environment-title">
+                <div class="team-heading"><span class="card-icon"><i class="bi bi-person-workspace" aria-hidden="true"></i></span><div><span class="section-eyebrow">Professional Setting</span><h3 id="environment-title">Work Environment</h3></div></div>
+                <p>The practicum followed a collaborative and multidisciplinary workflow that combined software development and creative production. Tasks were coordinated through project discussions, GitHub repositories, shared Google Drive folders, supervisor reviews, weekly progress meetings, and iterative feedback.</p>
+                <div id="tools-list" class="overview-chips" aria-label="Tools used during the practicum"></div>
+              </section>
+
+              <section class="overview-section" aria-labelledby="exposure-title">
+                <div class="overview-heading"><span class="section-eyebrow">Project Context</span><h3 id="exposure-title">Areas of Exposure</h3></div>
+                <div id="exposure-grid" class="overview-card-grid exposure-grid"></div>
+              </section>
             </div>
 
             <nav class="practicum-next" aria-label="Practicum page navigation">
-              <a href="roles.html" class="practicum-next-link">
+              <a href="responsibilities.html" class="practicum-next-link">
                 <div class="practicum-next-content">
-                  <span class="practicum-next-label">Continue Exploring</span>
+                  <span class="practicum-next-label">Explore My Contributions</span>
 
                   <div class="practicum-next-title-row">
-                    <h4>Roles &amp; Responsibilities</h4>
+                    <h4>View Responsibilities</h4>
 
                     <span class="practicum-next-icon" aria-hidden="true">
                       <i class="bi bi-arrow-right"></i>
@@ -199,8 +210,8 @@
                   </div>
 
                   <p>
-                    Explore the software development, creative support, documentation, and
-                    collaborative responsibilities I handled throughout the practicum.
+                    Continue to see how I contributed to software development, deployment support,
+                    testing, graphic asset creation, team collaboration, and technical documentation.
                   </p>
                 </div>
               </a>
@@ -226,7 +237,7 @@
 
                   <div class="info-item">
                     <div class="info-icon">
-                      <i class="bi bi-pc-display"></i>
+                      <i class="bi bi-cpu"></i>
                     </div>
                     <div class="info-content">
                       <h5>Department</h5>
@@ -236,11 +247,11 @@
 
                   <div class="info-item">
                     <div class="info-icon">
-                      <i class="bi bi-person-badge"></i>
+                      <i class="bi bi-briefcase"></i>
                     </div>
                     <div class="info-content">
                       <h5>Role</h5>
-                      <p>Software Development and Creative Support Intern</p>
+                      <p>Software Development &amp; Creative Support Intern</p>
                     </div>
                   </div>
 
@@ -250,7 +261,7 @@
                     </div>
                     <div class="info-content">
                       <h5>Team</h5>
-                      <p>Application Development and Creative Support</p>
+                      <p>Application Development &amp; Creative Support Team</p>
                     </div>
                   </div>
 
@@ -259,7 +270,7 @@
                       <i class="bi bi-calendar3"></i>
                     </div>
                     <div class="info-content">
-                      <h5>Duration</h5>
+                      <h5>Practicum Period</h5>
                       <p>April 29 – July 30, 2026</p>
                     </div>
                   </div>
@@ -270,7 +281,7 @@
                     </div>
                     <div class="info-content">
                       <h5>Training Requirement</h5>
-                      <p>486 practicum hours</p>
+                      <p>486 Practicum Hours</p>
                     </div>
                   </div>
 
@@ -280,30 +291,31 @@
                     </div>
                     <div class="info-content">
                       <h5>Location</h5>
-                      <p>838H+3V2, San Pablo St., Biñan City, Laguna, Philippines</p>
+                      <p>San Pablo Street, Biñan City, Laguna, Philippines</p>
                       <a
                         href="https://www.google.com/maps/place/Bi%C3%B1an+City+Hall/@14.3150422,121.0794589,19z/data=!4m6!3m5!1s0x3397d9d7d402a00b:0x98d248e973356fb4!8m2!3d14.3151344!4d121.079633!16s%2Fg%2F1tfqnh5r?entry=ttu&g_ep=EgoyMDI2MDcxMi4wIKXMDSoASAFQAw%3D%3D"
                         target="_blank"
                         rel="noopener noreferrer"
                         class="info-link"
                       >
-                        <u>View location</u>
+                        View Location <i class="bi bi-box-arrow-up-right" aria-hidden="true"></i><span class="visually-hidden"> (opens in a new tab)</span>
                       </a>
                     </div>
                   </div>
 
                   <div class="info-item info-item-wide">
                   <div class="info-icon">
-                    <i class="bi bi-globe"></i>
+                    <i class="bi bi-globe2"></i>
                   </div>
                   <div class="info-content">
                     <h5>Website</h5>
+                    <p>www.binan.gov.ph</p>
                     <a
                       href="https://www.binan.gov.ph"
                       target="_blank"
                       rel="noopener noreferrer"
                       class="info-link"
-                    ><u>www.binan.gov.ph</u></a>
+                    >Visit Website <i class="bi bi-box-arrow-up-right" aria-hidden="true"></i><span class="visually-hidden"> (opens in a new tab)</span></a>
                   </div>
                 </div>
               </div>
@@ -352,6 +364,7 @@
 
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
+  <script src="assets/js/internship-overview.js"></script>
 
 </body>
 
