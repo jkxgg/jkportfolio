@@ -15,7 +15,7 @@
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com" rel="preconnect">
   <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700;800&family=Poppins:wght@700&family=Roboto:wght@300;400;500;700&family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
 
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -26,6 +26,7 @@
 
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
+  <link href="assets/css/access-card.css" rel="stylesheet">
 </head>
 
 <body class="portfolio-details-page">
@@ -62,11 +63,11 @@
     <!-- Page Title -->
     <div class="page-title dark-background">
       <div class="container d-lg-flex justify-content-between align-items-center">
-        <h1 class="mb-2 mb-lg-0">Biñan Access Card</h1>
+        <h1 class="mb-2 mb-lg-0">Biñan Access Card MIS</h1>
         <nav class="breadcrumbs">
           <ol>
-            <li><a href="index.html">Home</a></li>
-            <li class="current">Portfolio Details</li>
+            <li><a href="index.html#portfolio">Portfolio</a></li>
+            <li class="current">Biñan Access Card MIS</li>
           </ol>
         </nav>
       </div>
@@ -77,136 +78,112 @@
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
 
-        <div class="row gy-4">
+        <div class="row gy-4 access-card-layout">
 
           <div class="col-lg-8">
-            <div class="portfolio-details-slider swiper init-swiper">
+            <header class="case-study-hero">
+              <span class="case-study-kicker"><i class="bi bi-qr-code-scan" aria-hidden="true"></i> Government Information System</span>
+              <h2>Biñan Access Card MIS</h2>
+              <p>A centralized beneficiary management platform with QR-based verification designed to support faster, more organized, and more reliable government assistance distribution.</p>
+            </header>
+
+            <div class="service-details-slider swiper init-swiper practicum-gallery access-card-slider">
 
               <script type="application/json" class="swiper-config">
                 {
                   "loop": true,
                   "speed": 600,
                   "autoplay": {
-                    "delay": 3000
+                    "delay": 3000,
+                    "disableOnInteraction": false,
+                    "pauseOnMouseEnter": true
                   },
-                  "slidesPerView": "auto",
+                  "slidesPerView": 1,
+                  "keyboard": {
+                    "enabled": true,
+                    "onlyInViewport": true
+                  },
                   "pagination": {
                     "el": ".swiper-pagination",
                     "type": "bullets",
                     "clickable": true
+                  },
+                  "navigation": {
+                    "nextEl": ".swiper-button-next",
+                    "prevEl": ".swiper-button-prev"
                   }
                 }
               </script>
 
               <div class="swiper-wrapper align-items-center">
 
-                <div class="swiper-slide">
-                  <img src="assets/img/portfolio/access_card/1.png" alt="Portfolio Image" class="img-fluid" loading="lazy">
-                </div>
-
-                <div class="swiper-slide">
-                  <img src="assets/img/portfolio/access_card/2.png" alt="Portfolio Image" class="img-fluid" loading="lazy">
-                </div>
-
-                <div class="swiper-slide">
-                  <img src="assets/img/portfolio/access_card/3.png" alt="Portfolio Image" class="img-fluid" loading="lazy">
-                </div>
-
-                <div class="swiper-slide">
-                  <img src="assets/img/portfolio/access_card/4.png" alt="Portfolio Image" class="img-fluid" loading="lazy">
-                </div>
-
-                <div class="swiper-slide">
-                  <img src="assets/img/portfolio/access_card/5.png" alt="Portfolio Image" class="img-fluid" loading="lazy">
-                </div>
-
-                <div class="swiper-slide">
-                  <img src="assets/img/portfolio/access_card/6.png" alt="Portfolio Image" class="img-fluid" loading="lazy">
-                </div>
-
-                <div class="swiper-slide">
-                  <img src="assets/img/portfolio/access_card/7.png" alt="Portfolio Image" class="img-fluid" loading="lazy">
-                </div>
-
-                <div class="swiper-slide">
-                  <img src="assets/img/portfolio/access_card/8.png" alt="Portfolio Image" class="img-fluid" loading="lazy">
-                </div>
-
-                <div class="swiper-slide">
-                  <img src="assets/img/portfolio/access_card/9.png" alt="Portfolio Image" class="img-fluid" loading="lazy">
-                </div>
+                <div class="swiper-slide"><figure class="practicum-slide"><img src="assets/img/portfolio/access_card/1.png" alt="Biñan Access Card login interface" loading="lazy"><figcaption class="slide-caption"><span>Management Information System</span><strong>Binan Access Card</strong><p>System mockup presenting the platform’s visual identity and responsive interface.</p></figcaption></figure></div>
+                <div class="swiper-slide"><figure class="practicum-slide"><img src="assets/img/portfolio/access_card/2.png" alt="Biñan Access Card system dashboard" loading="lazy"><figcaption class="slide-caption"><span>System Access</span><strong>Login Page</strong><p>Authenticates Administrator, Encoder, Scanner, and Viewer user accounts.</p></figcaption></figure></div>
+                <div class="swiper-slide"><figure class="practicum-slide"><img src="assets/img/portfolio/access_card/3.png" alt="Beneficiary record management interface" loading="lazy"><figcaption class="slide-caption"><span>System Overview</span><strong>Dashboard</strong><p>Summarizes records, registered members, active sectors, services, and recent activities.</p></figcaption></figure></div>
+                <div class="swiper-slide"><figure class="practicum-slide"><img src="assets/img/portfolio/access_card/4.png" alt="Community sector management interface" loading="lazy"><figcaption class="slide-caption"><span>Administration Module</span><strong>Manage Records</strong><p>Centralizes searching, filtering, importing, adding, and maintaining family records.</p></figcaption></figure></div>
+                <div class="swiper-slide"><figure class="practicum-slide"><img src="assets/img/portfolio/access_card/5.png" alt="Services and programs management interface" loading="lazy"><figcaption class="slide-caption"><span>Administration Module</span><strong>Encoder Data Entry Form</strong><p>Digitizes family profiling details through an organized beneficiary data-entry workflow.</p></figcaption></figure></div>
+                <div class="swiper-slide"><figure class="practicum-slide"><img src="assets/img/portfolio/access_card/6.png" alt="Program category management interface" loading="lazy"><figcaption class="slide-caption"><span>Administration Module</span><strong>Sector Management</strong><p>Organizes community sectors using short codes, descriptions, and status controls.</p></figcaption></figure></div>
+                <div class="swiper-slide"><figure class="practicum-slide"><img src="assets/img/portfolio/access_card/7.png" alt="Aid distribution management interface" loading="lazy"><figcaption class="slide-caption"><span>Administration Module</span><strong>Services & Programs Management</strong><p>Maintains services and programs by code, category, description, and availability status.</p></figcaption></figure></div>
+                <div class="swiper-slide"><figure class="practicum-slide"><img src="assets/img/portfolio/access_card/8.png" alt="Aid distribution batch interface" loading="lazy"><figcaption class="slide-caption"><span>Administration Module</span><strong>Manage Categories</strong><p>Structures program categories through searchable names, codes, and descriptions.</p></figcaption></figure></div>
+                <div class="swiper-slide"><figure class="practicum-slide"><img src="assets/img/portfolio/access_card/9.png" alt="Default QR verification screen" loading="lazy"><figcaption class="slide-caption"><span>Administration Module</span><strong>Distribution Screen</strong><p>Manages aid types, distribution batches, availability, and completed distribution records.</p></figcaption></figure></div>
+                <div class="swiper-slide"><figure class="practicum-slide"><img src="assets/img/portfolio/access_card/10.png" alt="Successful beneficiary QR verification" loading="lazy"><figcaption class="slide-caption"><span>QR Module</span><strong>Distribution Batches</strong><p>Displays each aid batch with its schedule and current open or closed status.</p></figcaption></figure></div>
+                <div class="swiper-slide"><figure class="practicum-slide"><img src="assets/img/portfolio/access_card/11.png" alt="Duplicate assistance claim warning" loading="lazy"><figcaption class="slide-caption"><span>QR Module</span><strong>QR Verification</strong><p>Scans or accepts QR control numbers to retrieve beneficiary and assistance information.</p></figcaption></figure></div>
+                <div class="swiper-slide"><figure class="practicum-slide"><img src="assets/img/portfolio/access_card/12.png" alt="Distribution reports dashboard" loading="lazy"><figcaption class="slide-caption"><span>QR Module</span><strong>Successful Validation Result</strong><p>Confirms a valid beneficiary and displays distribution details for final recording.</p></figcaption></figure></div>
+                <div class="swiper-slide"><figure class="practicum-slide"><img src="assets/img/portfolio/access_card/13.png" alt="Authorized account management interface" loading="lazy"><figcaption class="slide-caption"><span>QR Module</span><strong>Duplicate Entry Detection</strong><p>Prevents repeated claims by showing previous distribution details and aid history.</p></figcaption></figure></div>
+                <div class="swiper-slide"><figure class="practicum-slide"><img src="assets/img/portfolio/access_card/14.png" alt="System audit trail interface" loading="lazy"><figcaption class="slide-caption"><span>System Monitoring</span><strong>Reports</strong><p>Presents distribution coverage, recipients, waiting families, charts, and downloadable reports.</p></figcaption></figure></div>
+                <div class="swiper-slide"><figure class="practicum-slide"><img src="assets/img/portfolio/access_card/15.png" alt="System audit trail interface" loading="lazy"><figcaption class="slide-caption"><span>Administration Module</span><strong>Account Management</strong><p>Creates and maintains user accounts according to assigned roles and account status.</p></figcaption></figure></div>
+                <div class="swiper-slide"><figure class="practicum-slide"><img src="assets/img/portfolio/access_card/16.png" alt="System audit trail interface" loading="lazy"><figcaption class="slide-caption"><span>System Monitoring</span><strong>Audit Trails</strong><p>Logs authentication and account activities with user, device, action, date, and time details.</p></figcaption></figure></div>
 
               </div>
+              <div class="swiper-button-prev" aria-label="Previous project screen"></div>
+              <div class="swiper-button-next" aria-label="Next project screen"></div>
               <div class="swiper-pagination"></div>
             </div>
+
+            <section class="case-section case-about hero-project-context" aria-labelledby="about-title">
+              <span class="section-eyebrow">Project Context</span>
+              <h2 id="about-title">About the Project</h2>
+              <p>The Biñan Access Card Management Information System is a web-based government platform developed during my internship at the City Government of Biñan. It centralizes beneficiary information, supports eligibility management, records assistance claims, and uses unique QR codes to streamline identity verification during government subsidy and social welfare distribution activities.</p>
+              <p>The project was developed to improve administrative efficiency, reduce duplicate or unauthorized claims, and provide authorized personnel with faster access to beneficiary records and claim history.</p>
+            </section>
           </div>
 
           <div class="col-lg-4">
-            <div class="portfolio-info" data-aos="fade-left" data-aos-delay="200">
-              <h3>Project Information</h3>
-              <ul>
-                <li><strong>Category</strong>: Government Information System</li>
-                <li><strong>Organization</strong>: City Government of Biñan</li>
-                <li><strong>Role</strong>: UI/UX Designer & Front-End Contributor</li>
-                <li><strong>Client</strong>: City Social Welfare and Development</li>
-                <li><strong>Project Type</strong>: Web Application</li>
-                <!-- <li><strong>Project date</strong>: 01 March, 2024</li> -->
-                <!-- <li><strong>Project URL</strong>: <a href="#" target="_blank">www.example.com</a></li> -->
-              </ul>
+            <div class="portfolio-info project-snapshot" data-aos="fade-left" data-aos-delay="200">
+              <h3>Project Snapshot</h3>
+              <div id="project-snapshot"></div>
+              <div class="snapshot-actions">
+                <a href="#project-gallery" class="case-btn primary"><i class="bi bi-images" aria-hidden="true"></i>View Project Screens</a>
+                <a href="index.html#portfolio" class="case-btn secondary"><i class="bi bi-arrow-left" aria-hidden="true"></i>Back to Portfolio</a>
+              </div>
             </div>
           </div>
 
           <div class="col-lg-12">
-            <div class="portfolio-description" data-aos="fade-up" data-aos-delay="300">
-              <h2>Project Overview</h2>
-              <p>
-                The <strong>Biñan Access Card</strong> is a web-based government information system developed during my internship at the City Government of Biñan. The system streamlines the management and verification of resident access cards by providing an organized platform for storing, searching, and managing applicant information. It was designed to improve administrative efficiency and support the city's digital transformation initiatives.
-              </p>
-              
-              <h2>My Responsibilities</h2>
-              <p>
-                • Designed the user interface and user experience (UI/UX) for the QR code scanner module.<br>
-                • Created high-fidelity interface mockups based on the existing functional prototype.<br>
-                • Improved workflow, readability, and navigation for faster beneficiary verification.<br>
-                • Collaborated with the development team to ensure the proposed design aligned with system functionality.
-              </p>
+            <div class="portfolio-description case-study-content" data-aos="fade-up" data-aos-delay="300">
+              <section class="case-section challenge-panel" aria-labelledby="challenge-title"><div><span class="section-eyebrow">Problem</span><h2 id="challenge-title">The Challenge</h2><p>Government assistance distribution requires personnel to verify beneficiaries accurately while serving many residents within a limited period. Manual or fragmented workflows can make record searching, eligibility confirmation, claim monitoring, and duplicate-claim prevention more difficult.</p></div><ul><li>Organize beneficiary records in one system</li><li>Verify identities quickly through QR codes</li><li>Display eligibility and claim information clearly</li><li>Support accurate assistance recording</li><li>Remain usable during actual distribution operations</li></ul></section>
 
-              <div class="features mt-4">
-                <h3>Key Features</h3>
-                <div class="row gy-3">
-                  <div class="col-md-6">
-                    <div class="feature-item" data-aos="fade-up" data-aos-delay="400">
-                      <i class="bi bi-qr-code-scan"></i>
-                      <h4>QR Code-Based Verification</h4>
-                      <p>Quickly scans and validates beneficiary QR codes, enabling fast and accurate identification during government assistance and social welfare distribution.</p>
-                    </div>
-                  </div>
+              <section class="case-section" aria-labelledby="solution-title"><div class="case-heading"><span class="section-eyebrow">Approach</span><h2 id="solution-title">The Solution</h2><p>The Biñan Access Card MIS provides a centralized workflow for beneficiary registration, eligibility management, QR generation, QR verification, claim history review, and assistance recording. Its interface was designed to help authorized personnel retrieve essential information quickly and complete verification tasks with fewer unnecessary steps.</p></div><div id="solution-grid" class="case-grid three-grid"></div></section>
 
-                  <div class="col-md-6">
-                    <div class="feature-item" data-aos="fade-up" data-aos-delay="500">
-                      <i class="bi bi-phone"></i>
-                      <h4>User-Centered Interface</h4>
-                      <p>Designed an intuitive and user-friendly interface that enhances the user experience for both government staff and residents, ensuring ease of use and accessibility.</p>
-                    </div>
-                  </div>
+              <section class="case-section" aria-labelledby="contribution-title"><div class="case-heading"><span class="section-eyebrow">Team Contribution</span><h2 id="contribution-title">My Contribution</h2><p>My contribution covered both software development and interface design, with additional involvement in testing, deployment preparation, documentation, and iterative refinement with the ICTO team.</p></div><div id="contribution-grid" class="case-grid three-grid"></div></section>
 
-                  <div class="col-md-6">
-                    <div class="feature-item" data-aos="fade-up" data-aos-delay="600">
-                      <i class="bi bi-person-vcard"></i>
-                      <h4>Real-Time Benificiary Information</h4>
-                      <p>Displays essential beneficiary details immediately after scanning, allowing authorized personnel to verify records with minimal delay.</p>
-                    </div>
-                  </div>
+              <section class="case-section" aria-labelledby="workflow-title"><div class="case-heading"><span class="section-eyebrow">Operational Flow</span><h2 id="workflow-title">How the System Works</h2></div><div id="system-workflow" class="case-workflow"></div></section>
 
-                  <div class="col-md-6">
-                    <div class="feature-item" data-aos="fade-up" data-aos-delay="700">
-                      <i class="bi bi-buildings"></i>
-                      <h4>Government Service Support</h4>
-                      <p>Developed to enhance the Biñan Access Card System by improving the efficiency and reliability of beneficiary verification for public service operations.</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
+              <section class="case-section" aria-labelledby="features-title"><div class="case-heading"><span class="section-eyebrow">System Capabilities</span><h2 id="features-title">Key Features</h2></div><div id="feature-grid" class="case-grid three-grid"></div></section>
+
+              <section class="case-section" aria-labelledby="stack-title"><div class="case-heading"><span class="section-eyebrow">Build Stack</span><h2 id="stack-title">Technology Stack</h2></div><div id="technology-grid" class="case-grid four-grid"></div></section>
+
+              <section class="case-section" aria-labelledby="design-title"><div class="case-heading"><span class="section-eyebrow">Interface Reasoning</span><h2 id="design-title">Design Highlights</h2></div><div id="design-grid" class="design-list"></div></section>
+
+              <section class="case-section" aria-labelledby="process-title"><div class="case-heading"><span class="section-eyebrow">From Brief to Turnover</span><h2 id="process-title">Development Process</h2></div><div id="development-process" class="process-grid"></div></section>
+
+              <section id="project-gallery" class="case-section" aria-labelledby="gallery-title"><div class="case-heading"><span class="section-eyebrow">System Screens</span><h2 id="gallery-title">Project Gallery</h2></div><div id="project-gallery-grid" class="project-gallery-grid"></div></section>
+
+              <section class="case-section outcome-panel" aria-labelledby="outcome-title"><div class="case-heading"><span class="section-eyebrow">Delivered Result</span><h2 id="outcome-title">Project Outcome</h2><p>The completed system provided the ICTO and client office with a centralized platform for beneficiary management, QR verification, eligibility review, claim monitoring, and assistance recording. The project progressed from requirements and interface planning through development, testing, deployment support, documentation, and turnover.</p></div><div id="outcome-grid" class="case-grid three-grid"></div></section>
+
+              <section class="case-section" aria-labelledby="lessons-title"><div class="case-heading"><span class="section-eyebrow">Professional Growth</span><h2 id="lessons-title">Lessons Learned</h2></div><div id="lessons-grid" class="case-grid four-grid"></div></section>
+
+              <nav class="project-navigation" aria-label="Project navigation"><a href="index.html#portfolio" class="project-nav-link"><i class="bi bi-arrow-left" aria-hidden="true"></i><span><small>Back to</small><strong>Portfolio</strong></span></a><!-- <a href="major-projects.html" class="project-nav-link next"><span><small>Next Project</small><strong>K–12 Educational Game Assets</strong></span><i class="bi bi-arrow-right" aria-hidden="true"></i></a></nav>-->
             </div>
           </div>
 
@@ -225,10 +202,6 @@
         <p>© <span>2026</span> <strong class="px-1 sitename">John Kenneth Gangoso</strong></p>
       </div>
       <div class="credits">
-        <!-- All the links in the footer should remain intact. -->
-        <!-- You can delete the links only if you've purchased the pro version. -->
-        <!-- Licensing information: https://bootstrapmade.com/license/ -->
-        <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
          jkxgg.
       </div>
     </div>
@@ -256,6 +229,7 @@
 
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
+  <script src="assets/js/access-card.js"></script>
 
 </body>
 
