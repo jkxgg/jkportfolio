@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>jkxgg | FitTrack</title>
+  <meta name="description" content="FitTrack mobile fitness tracker application portfolio case study.">
+  <link href="assets/img/icons/web-logo.png" rel="icon">
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700;800&family=Poppins:wght@700&family=Roboto:wght@300;400;500;700&family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="assets/css/main.css" rel="stylesheet">
+  <link href="assets/css/fittrack.css" rel="stylesheet">
+</head>
+<body class="service-details-page">
+  <header id="header" class="header dark-background d-flex flex-column justify-content-center">
+    <i class="header-toggle d-xl-none bi bi-list"></i>
+    <div class="header-container d-flex flex-column align-items-start">
+      <nav id="navmenu" class="navmenu"><ul>
+        <li><a href="index.html#hero"><i class="bi bi-house navicon"></i>Home</a></li>
+        <li><a href="index.html#about"><i class="bi bi-person navicon"></i> About</a></li>
+        <li><a href="index.html#resume"><i class="bi bi-file-earmark-text navicon"></i> Resume</a></li>
+        <li><a href="index.html#portfolio"><i class="bi bi-images navicon"></i> Portfolio</a></li>
+        <li><a href="index.html#practicum"><i class="bi bi-hdd-stack navicon"></i> Practicum</a></li>
+        <li><a href="index.html#contact"><i class="bi bi-envelope navicon"></i> Contact</a></li>
+      </ul></nav>
+      <div class="social-links text-center"><a href="https://www.facebook.com/jkxgg/" class="facebook"><i class="bi bi-facebook"></i></a><a href="https://www.instagram.com/jkxgg_/" class="instagram"><i class="bi bi-instagram"></i></a><a href="https://www.linkedin.com/in/jkcgangoso/" class="linkedin"><i class="bi bi-linkedin"></i></a></div>
+    </div>
+  </header>
+
+  <main class="main">
+    <div class="page-title dark-background"><div class="container d-lg-flex justify-content-between align-items-center">
+      <h1 class="mb-2 mb-lg-0"><a href="index.html">jkxgg.</a></h1>
+      <nav class="breadcrumbs"><ol><li>
+        <a href="index.html#portfolio">Portfolio</a></li>
+        <li class="current">FitTrack</li></ol>
+      </nav>
+    </div>
+  </div>
+    <section id="fittrack-case-study" class="fittrack-case-study section">
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="fittrack-hero-grid">
+          <div class="fittrack-hero-main">
+            <header class="fittrack-hero-copy"><span class="fittrack-kicker"><i class="bi bi-activity" aria-hidden="true"></i> Mobile Fitness Application</span><h2>FitTrack</h2><p>A fitness tracking application for recording activities, monitoring body metrics, reviewing workout history, and managing personal fitness progress.</p></header>
+            <div class="service-details-slider swiper init-swiper practicum-gallery fittrack-slider">
+              <script type="application/json" class="swiper-config">{"loop":true,"speed":600,"slidesPerView":1,"spaceBetween":16,"autoplay":{"delay":3000,"disableOnInteraction":false,"pauseOnMouseEnter":true},"keyboard":{"enabled":true,"onlyInViewport":true},"pagination":{"el":".swiper-pagination","type":"bullets","clickable":true},"navigation":{"nextEl":".swiper-button-next","prevEl":".swiper-button-prev"}}</script>
+              <div id="fittrack-slides" class="swiper-wrapper align-items-center"></div>
+              <div class="swiper-button-prev" aria-label="Previous FitTrack screen"></div><div class="swiper-button-next" aria-label="Next FitTrack screen"></div><div class="swiper-pagination"></div>
+            </div>
+            <section class="fittrack-about" aria-labelledby="fittrack-about-title"><span class="section-eyebrow">Project Context</span><h2 id="fittrack-about-title">About FitTrack</h2><p>FitTrack focuses on monitoring and managing user activities and progress. Users can create an account, record and edit activities, search existing entries, browse workouts, update their profile, and review body and calorie-related metrics from a unified mobile interface.</p></section>
+          </div>
+          <aside class="fittrack-snapshot"><h3>Project Snapshot</h3><div id="fittrack-snapshot"></div><div class="snapshot-actions"><a href="#fittrack-gallery" class="fittrack-btn primary"><i class="bi bi-images" aria-hidden="true"></i>View App Screens</a><a href="index.html#portfolio" class="fittrack-btn secondary"><i class="bi bi-arrow-left" aria-hidden="true"></i>Back to Portfolio</a></div></aside>
+        </div>
+
+        <div class="fittrack-content">
+          <section class="fittrack-section" aria-labelledby="challenge-title"><div class="fittrack-heading"><span class="section-eyebrow">Problem &amp; Direction</span><h2 id="challenge-title">The Challenge</h2><p>Fitness information can become difficult to follow when workouts, activity history, body measurements, and profile details are managed separately. FitTrack brings these tasks into one state-driven application so users can record progress and review relevant metrics more consistently.</p></div><div id="project-goals" class="fittrack-grid three-grid"></div></section>
+          <section class="fittrack-section" aria-labelledby="features-title"><div class="fittrack-heading"><span class="section-eyebrow">Application Capabilities</span><h2 id="features-title">Core Features</h2></div><div id="feature-grid" class="fittrack-grid three-grid"></div></section>
+          <section class="fittrack-section architecture-panel" aria-labelledby="architecture-title"><div class="fittrack-heading"><span class="section-eyebrow">Coding Style</span><h2 id="architecture-title">MVVM + REST Architecture</h2><p>The application separates data, state management, and composable screens through MVVM, while REST endpoints connect the mobile client to its PHP backend through self-contained HTTP requests.</p></div><div id="architecture-grid" class="fittrack-grid architecture-grid"></div></section>
+          <section class="fittrack-section" aria-labelledby="flow-title"><div class="fittrack-heading"><span class="section-eyebrow">Data Flow</span><h2 id="flow-title">How FitTrack Works</h2></div><div id="app-flow" class="fittrack-flow"></div></section>
+          <section class="fittrack-section" aria-labelledby="technology-title"><div class="fittrack-heading"><span class="section-eyebrow">Implementation</span><h2 id="technology-title">Technology Stack</h2></div><div id="technology-grid" class="fittrack-grid four-grid"></div></section>
+          <section id="fittrack-gallery" class="fittrack-section" aria-labelledby="gallery-title"><div class="fittrack-heading"><span class="section-eyebrow">Interface Showcase</span><h2 id="gallery-title">Project Gallery</h2><p>Explore the mobile journey from account access to activity tracking, workout discovery, and profile management.</p></div><div id="fittrack-gallery-grid" class="fittrack-gallery-grid"></div></section>
+          <section class="fittrack-section outcome-panel" aria-labelledby="outcome-title"><div class="fittrack-heading"><span class="section-eyebrow">Project Outcome</span><h2 id="outcome-title">A Unified Fitness Tracking Experience</h2><p>FitTrack demonstrates a complete mobile workflow backed by reactive state management and REST communication. The application connects account access, workout records, body metrics, calorie guidance, exercise browsing, and profile editing through a consistent dark interface.</p></div><div id="outcome-grid" class="fittrack-grid three-grid"></div></section>
+          <section class="fittrack-section" aria-labelledby="learning-title"><div class="fittrack-heading"><span class="section-eyebrow">Development Takeaways</span><h2 id="learning-title">What the Project Demonstrates</h2></div><div id="learning-grid" class="fittrack-grid four-grid"></div></section>
+          <nav class="fittrack-navigation" aria-label="Project navigation"><a href="index.html#portfolio"><i class="bi bi-arrow-left" aria-hidden="true"></i><span><small>Back to</small><strong>Portfolio</strong></span></a>
+            <!-- <a href="access-card.html" class="next"><span><small>Next Project</small><strong>Biñan Access Card MIS</strong></span><i class="bi bi-arrow-right" aria-hidden="true"></i></a>--></nav>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer id="footer" class="footer position-relative"><div class="container"><div class="copyright text-center"><p>© <span>2026</span> <strong class="px-1 sitename">John Kenneth Gangoso</strong></p></div><div class="credits">jkxgg.</div></div></footer>
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a><div id="preloader"></div>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script><script src="assets/vendor/php-email-form/validate.js"></script><script src="assets/vendor/aos/aos.js"></script><script src="assets/vendor/typed.js/typed.umd.js"></script><script src="assets/vendor/purecounter/purecounter_vanilla.js"></script><script src="assets/vendor/waypoints/noframework.waypoints.js"></script><script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script><script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script><script src="assets/vendor/glightbox/js/glightbox.min.js"></script><script src="assets/vendor/swiper/swiper-bundle.min.js"></script><script src="assets/js/main.js"></script><script src="assets/js/fittrack.js"></script>
+</body>
+</html>
